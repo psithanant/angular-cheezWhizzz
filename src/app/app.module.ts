@@ -6,12 +6,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ResultTableComponent } from './result-table/result-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent,
-    NavBarComponent
+    NavBarComponent,
+    ResultTableComponent
   ],
   imports: [
     BrowserModule,
