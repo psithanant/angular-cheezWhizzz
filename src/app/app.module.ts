@@ -4,17 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ResultTableComponent } from './result-table/result-table.component';
 import { FilteredButtonGroupComponent } from './filtered-button-group/filtered-button-group.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     ResultTableComponent,
-    FilteredButtonGroupComponent
+    FilteredButtonGroupComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

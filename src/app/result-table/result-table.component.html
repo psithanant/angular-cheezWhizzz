@@ -8,10 +8,10 @@
             </tr>
         </thead>
         <tbody>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
+          <tr *ngFor="let cheese of cheeses">
+              <td>{{cheese.name}}</td>
+              <td>{{cheese.firmness}}</td>
+              <td>{{cheese.animal}}</td>
               <td><input type="checkbox"/></td>
           </tr>
         </tbody>
