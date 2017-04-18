@@ -7,8 +7,11 @@
       <span class="icon-bar"></span><span class="icon-bar"></span></button>
      </div>
      <div class="search-bar navbar-form navbar-left"><div class="form-group">
-      <input type="text" placeholder="Enter Cheese Name" class="form-control">
-      <button type="button" class="btn btn-default">Submit</button>
+       <form (submit)="search(cheeseName.value)">
+         <input type="text" placeholder="Enter Cheese Name"
+                class="form-control" #cheeseName>
+         <button type="submit" class="btn btn-default">Submit</button>
+      </form>
      </div></div>
      <div class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right"><ul>
       <li><a href="/">Home</a></li><li><a href="/secondPage">Search Cheese in your location</a></li>
