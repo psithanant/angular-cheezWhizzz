@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class NavBarComponent {
   @Output()
-  onSearch = new EventEmitter()
+  onSearch = new EventEmitter();
 
   search(cheeseName: string) {
     this.onSearch.emit(cheeseName);

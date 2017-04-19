@@ -3,10 +3,10 @@ import { Http, Response } from '@angular/http';
 
 const CHEESES = [
   {
-  "id": 1,
-  "name": "Brie",
-  "animal": "cow",
-  "firmness": "soft"
+  'id': 1,
+  'name': 'Brie',
+  'animal': 'cow',
+  'hardness': 'soft'
 }
 ];
 
@@ -29,19 +29,6 @@ export class AppComponent {
         this.loading = false;
       });
   }
-//   function fetchSubstitutes(cheeseName) {
-//   return fetch(`http://cheeswhiz.herokuapp.com/api/cheese/substitute/${cheeseName}`)
-//     .then(res => res.json())
-// }
-  // seeSubstitutes() {
-  //   this.results = [];
-  //   this.loading = true;
-  //   this.http.request('http://cheeswhiz.herokuapp.com/api/cheese/substitute/Brie')
-  //     .subscribe((res: Response) => {
-  //       this.results = res.json();
-  //       this.loading = false;
-  //     });
-  // }
 
   doSearch(cheeseName: string) {
     this.results = [];

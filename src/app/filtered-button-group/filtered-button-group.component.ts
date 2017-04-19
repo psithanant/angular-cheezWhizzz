@@ -7,15 +7,15 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class FilteredButtonGroupComponent implements OnInit {
   @Output()
-  onSeeAllCheeses = new EventEmitter()
+  onSeeAllCheeses = new EventEmitter();
   @Output()
-  onSearchByName = new EventEmitter()
+  onSearchByName = new EventEmitter();
   @Output()
-  onSearchSubstitutes = new EventEmitter()
+  onSearchSubstitutes = new EventEmitter();
   @Output()
-  onSearchByFirmness = new EventEmitter()
+  onSearchByFirmness = new EventEmitter();
   @Output()
-  onSearchByAnimal = new EventEmitter()
+  onSearchByAnimal = new EventEmitter();
 
   constructor() { }
 
@@ -23,27 +23,27 @@ export class FilteredButtonGroupComponent implements OnInit {
   }
 
   seeAllCheeses() {
-    this.onSeeAllCheeses.emit(null)
+    this.onSeeAllCheeses.emit(null);
   }
 
   searchByName(cheeseName: string) {
     this.onSearchByName.emit(cheeseName);
-    event.preventDefault()
+    event.preventDefault();
   }
 
   searchSubstitutes(cheeseName: string) {
     this.onSearchSubstitutes.emit(cheeseName);
-    event.preventDefault()
+    event.preventDefault();
   }
 
   searchByFirmness(firmness: string) {
     this.onSearchByFirmness.emit(firmness);
-    event.preventDefault()
+    event.preventDefault();
   }
 
   searchByAnimal(animal: string) {
     this.onSearchByAnimal.emit(animal);
-    event.preventDefault()
+    event.preventDefault();
   }
 
 }
