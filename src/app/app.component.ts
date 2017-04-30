@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import CheeseService from './cheese.service';
 
+
+// would have liked to see a model for cheese used instead of an object.
 const CHEESES = [
   {
   'id': 1,
@@ -15,7 +17,7 @@ const CHEESES = [
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [CheeseService]
+  providers: [CheeseService] // would have preferred this be at the app.module level.
 })
 export class AppComponent {
   results = CHEESES;
