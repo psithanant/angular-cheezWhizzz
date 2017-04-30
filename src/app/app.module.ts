@@ -9,6 +9,7 @@ import { ResultTableComponent } from './result-table/result-table.component';
 import { FilteredButtonGroupComponent } from './filtered-button-group/filtered-button-group.component';
 import { CarouselComponent } from './carousel/carousel.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
